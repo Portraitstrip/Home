@@ -1,0 +1,117 @@
+@media(min-width: 320px) and (max-width: 520px){
+	nav{
+		height: 180px;
+		padding: 10px 40px;
+	}
+	.navbar{
+		padding: 15px 30px;
+	}
+	nav .logo img{
+		height: 80px;
+	}
+	nav.black{
+		height: 80px;
+		padding: 15px 15px;		
+	}
+	nav.black .logo img{
+		height: 40px;
+	}
+	.nav-link{
+		font-size: 12px;
+	}
+	body{
+		background-position: right;
+	}
+	#inicio{
+		font-size: 20px;
+		height: 650px;	
+
+	}
+	#inicio p{
+		padding-top: 40px;
+	}
+	.circulo{
+		width: 450px;
+		height: 450px;
+		border-radius: 50%;
+		background: rgba(96,90,150,0.5);
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.circulo{
+		width: 250px;
+		height: 250px;
+	}
+	.esquina{
+		width: 280px;
+	}
+	.explore{
+		margin: auto;
+		padding-top: 100px;
+	}
+	.explore .btn-start{
+		font-size: 16px;
+	}
+	.content-center {
+		max-width: 520px;
+		margin: 0px auto 0px auto;
+	}
+	.py-6 {
+	    padding-top: 2rem;
+	    padding-bottom: 2rem;
+	}
+	#about-us h1{
+		font-size: 28px;
+	}
+	#about-us p, #edit p{
+		padding-top: 10px;
+		font-size: 14px;
+	}
+	.portfolio-container{
+	    margin: 5px 20px;
+	    width: 250px;
+	    height: 280px;
+	}
+	.portfolio-details h2 {
+		margin-top: 0px;
+	    margin-bottom: 0px;
+	    font-size: 18px;
+	}
+
+
+	h1, h2{
+		font-size: 28px;
+	}
+	#contact{
+		align-items: center;
+		text-align: center;
+	}
+	#contact p{
+		font-size: 12px;
+	}
+	#contact i{
+		font-size: 24px;
+		padding-bottom: 20px;		
+	}
+	#contact img{
+		width: 75%;
+	}
+	footer {
+		font-size: 12px;
+		padding: 5px;
+		text-align: center;
+	}
+
+
+
+	#shot-here p{
+	font-size: 16px;
+}
+
+
+}

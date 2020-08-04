@@ -1,0 +1,272 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+	align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Pacifico', cursive;
+	color: #fff;
+}
+body, footer{
+	font-family: 'Roboto', sans-serif;
+}
+#menu{
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
+.bg-light { background-color: var(--light) !important; }
+.bg-grey { background-color: var(--grey) !important; }
+.bg-active { background-color: var(--active) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+:root{
+	--dark: #2A2A36;
+	--active: #A5DFE3;
+	--grey: #f6f6f6;
+	--light: #ffffff;
+}
+/* ==================================================
+  Parallax Styling
+================================================== */
+	body{
+		background-image: url(../img/fondo.jpg);
+	    background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+		margin: 0;
+		padding: 0;
+	}
+/* ==================================================
+  Hover Transition
+================================================== */
+	a{
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	}
+	a:hover{
+	text-decoration: none !important;
+	color: #fff;
+	}
+/* ==================================================
+  Header Styling
+================================================== */
+	nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 180px;
+		padding: 10px 100px;
+		box-sizing: border-box;
+		transition: .5s;
+		z-index: 100;
+	}
+	nav.black{
+		background: rgba(0, 128, 141,1);
+		height: 80px;
+		padding: 10px 50px;		
+	}
+	nav .logo{
+		float: left;
+	}
+	nav .logo img{
+		height: 150px;
+		transition: .25s;
+	}
+	nav.black .logo img{
+		height: 60px;
+	}
+	.navbar-nav a,
+	.navbar-nav a:hover{
+	 	text-decoration:none;
+	 	padding:0px;
+	}
+	.navbar{
+		padding: 30px 100px;
+		font-family: 'Roboto', sans-serif;
+		transition: .25s;
+	}
+	.nav-link{
+		color: #fff;
+		font-size: 20px;
+	}	
+/* ==================================================
+  Home Banner
+================================================== */
+	#inicio {
+		display: flex;
+		width: 100%;
+		height: 950px;
+		margin-top: -100px;
+		color: #fff;
+		font-size: 38px;
+		font-family: 'Pacifico', cursive;
+	}
+	#inicio p{
+		padding-top: 40px;
+	}
+	.circulo{
+		width: 450px;
+		height: 450px;
+		border-radius: 50%;
+		background: rgba(96,90,150,0.5);
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	.esquina{
+		width: 500px;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -2;
+	}
+	.explore{
+	max-width: 250px;
+	margin-left: 120px;
+	text-align: center;
+	}
+	.explore .btn-start{
+		background-color: rgba(0,0,0,0);
+		border:3px solid #FFF;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 0px;
+		font-size: 24px;
+	}
+	.explore .btn-start:hover {
+		background: rgba(96,90,150,1);
+		border : 3px solid #605A96;
+		color: #FFF;	  
+	}
+/* ==================================================
+  Abous Us
+================================================== */
+	.py-6 {
+	    padding-top: 4rem;
+	    padding-bottom: 4rem;
+	}
+	.content-center {
+		max-width: 800px;
+		margin: 0px auto 60px auto;
+		text-align: center;
+	}
+	.about-img{
+	  width: 100%;
+	}
+	#about-us h1{
+		font-size: 80px;
+		color: #00808D;
+	}
+	#about-us p{
+		padding-top: 20px;
+		font-size: 24px;
+	}
+	.btn-start {
+	  background-color: #00808D;
+	  border:3px solid #00808D;
+	  color: #fff;
+	  padding: 10px 30px;
+	  border-radius: 0px;
+	  font-size: 24px;
+	}
+	.btn-start:hover {
+	  background: rgba(0,0,0,0);
+	  border : 3px solid #00808D;
+	  color: #00808D;
+	}
+/* ==================================================
+  Edith with us
+================================================== */
+	#edit .container .content-center{
+		margin: auto;
+		align-items: center;
+	}
+	.portfolio-container{
+	    position: relative;
+	    overflow: hidden;
+	    margin: 20px 0;
+	    border-radius: 2px;
+	    width: 350px;
+	    height: 450px;
+	}
+	.portfolio-container img {
+	    -moz-transition: all 0.8s;
+	    -webkit-transition: all 0.8s;
+	    transition: all 0.8s;
+	    filter: grayscale(100%);
+	}
+	.portfolio-container:hover img {
+	    -moz-transform: scale(1.2);
+	    -webkit-transform: scale(1.2);
+	    transform: scale(1.2);
+	}
+	.portfolio-details{
+	    position: absolute;
+	    bottom: 0px;
+	    left: 25px;
+	    z-index: 90;
+	}
+	.portfolio-details h2{
+		margin-top: 10px;
+	    margin-bottom: 10px;
+	    font-size: 26px;
+	}
+	.portfolio-details a h2, .portfolio-details a p{
+	    color: #fff;
+	    text-shadow: 2px 2px 1px #00808D;
+	}
+	b{
+		color: #fff;
+	}
+
+
+#shot-here h1{
+	color: #00808D;
+}
+#shot-here p{
+	font-size: 24px;
+}
+
+
+/* ==================================================
+  Contact
+================================================== */
+	#contact p{
+		color: #fff;
+	}
+	#contact img{
+		width: 50%;
+	}
+	#contact i{
+		width: 80px;
+		font-size: 50px;
+	}
+/* ==================================================
+  Footer
+================================================== */
+	footer {
+		margin: 0;
+		font-size: 16px;
+		width: 100%;
+		background: #2A2A36;
+		padding: 10px;
+		color: #FFF;
+		border-top: 2px solid rgba(255,255,255,1);
+	}
+	footer p{
+		margin: 0;
+	}
+
+
